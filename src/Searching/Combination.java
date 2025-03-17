@@ -2,14 +2,14 @@ package Searching;
 
 public class Combination {
     public static void main(String[] args) {
-        int[] nums = new int[1000];
-        nums[nums.length-1]=1000;
+        int[] numbers = new int[1000];
+        numbers[numbers.length-1]=1000;
         int target = 1000;
         int left = 0;
-        int right = nums.length - 1;
-        int result = linearSearching(nums, target);
+        int right = numbers.length - 1;
+        int result = linearSearching(numbers, target);
         int count = 0;
-        int result1 = binarySearching(nums, target, left, right, count);
+        int result1 = binarySearching(numbers, target, left, right, count);
         if (result1 != -1)
             System.out.println("Element found at " + result1);
         else
