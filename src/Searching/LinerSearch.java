@@ -11,6 +11,6 @@ public class LinerSearch {
                 break;
             }
         }
-        System.out.println("Index of " + target + " is " + found);
+        System.out.println("Element found at " + found);
     }
 }
