@@ -7,10 +7,11 @@ public class QuickSort {
         for (int nums : arr) {
             System.out.print(nums + " ");
         }
+        System.out.println("\n");
 
         quikSort(arr, 0, arr.length-1);
 
-        System.out.println("\n");
+        System.out.println();
         System.out.println("After Sorted");
         for (int nums : arr) {
             System.out.print(nums + " ");
@@ -39,7 +40,10 @@ public class QuickSort {
         int temp=arr[i+1];
         arr[i+1]=arr[high];
         arr[high]=temp;
-
+        for (int nums : arr) {
+            System.out.print(nums + " ");
+        }
+        System.out.println();
         return i+1;
     }
 }
