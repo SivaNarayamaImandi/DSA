@@ -3,7 +3,7 @@ package Searching;
 public class Combination {
     public static void main(String[] args) {
         int[] numbers = new int[1000];
-        numbers[numbers.length-1]=1000;
+        numbers[numbers.length - 1] = 1000;
         int target = 1000;
         int left = 0;
         int right = numbers.length - 1;
@@ -34,15 +34,15 @@ public class Combination {
 
 
     public static int linearSearching(int[] nums, int target) {
-        int count=0;
+        int count = 0;
         for (int i = 0; i < nums.length; i++) {
             count++;
-            if(nums[i]==target) {
-                System.out.println("Number of iterations : "+count);
+            if (nums[i] == target) {
+                System.out.println("Number of iterations : " + count);
                 return i;
             }
         }
-        System.out.println("Number of iterations : "+count);
+        System.out.println("Number of iterations : " + count);
         return -1;
     }
 }

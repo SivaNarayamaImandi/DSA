@@ -2,7 +2,7 @@ package Searching;
 
 public class BinarySearch {
     public static void main(String[] args) {
-        int[] numbers = { 10, 20, 39, 94, 202, 908, 9734 };
+        int[] numbers = {10, 20, 39, 94, 202, 908, 9734};
         int left = 0;
         int target = 202;
         int right = numbers.length - 1;
