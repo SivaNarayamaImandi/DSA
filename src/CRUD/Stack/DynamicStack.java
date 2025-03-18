@@ -24,31 +24,27 @@ public class DynamicStack {
     public void show() {
         int presntData = 0;
         for (int data : stack) {
-//            presntData++;
-//            if (top >= presntData) {
-                System.out.println(data);
-//            }
+            presntData++;
+            if (top >= presntData) {
+            System.out.println(data);
+            }
         }
     }
 
     public int pop() {
         int data = 0;
-        if (isEmpty()) {
-            System.out.println("Stack is empty");
-        } else {
-            top--;
-            data = stack[top];
-            stack[top] = 0;
-            shrink();
-        }
+        top--;
+        data = stack[top];
+        stack[top] = 0;
+        shrink();
         return data;
 
     }
 
     public void shrink() {
         int length = size();
-        if(length<=(capacity/2)/2)
-            capacity/=2;
+        if (length <= (capacity / 2) / 2)
+            capacity /= 2;
         int[] newStack = new int[capacity * 2];
         System.arraycopy(stack, 0, newStack, 0, length);
         stack = newStack;

@@ -23,7 +23,6 @@ public class OperationClass {
         dynamicStack.pop();
         dynamicStack.pop();
         dynamicStack.pop();
-        dynamicStack.pop();
         dynamicStack.show();
     }
 }
