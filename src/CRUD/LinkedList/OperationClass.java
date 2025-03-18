@@ -4,7 +4,7 @@ package CRUD.LinkedList;
 Comments for understanding the process
 if you don't want to remove the comment
  */
-public class CRUDMainClass {
+public class OperationClass {
     public static void main(String[] args) {
         LinkedList list = new LinkedList();
         list.insert(12);
